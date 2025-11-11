@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coastline Creative | Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__nav">
+        <div class="logo">Coastline Creative</div>
+        <nav class="nav">
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="hero__content">
+        <div class="hero__copy">
+          <p class="eyebrow">Brand-first experiences</p>
+          <h1>Designing seaside stories for bold founders.</h1>
+          <p>
+            We craft sunny, user-friendly brands and product launches that feel
+            like a weekend escape. Strategy, design, and copy in one tidy crew.
+          </p>
+          <a href="#contact" class="btn btn--primary">Book a discovery call</a>
+        </div>
+        <div class="hero__image">
+          <img
+            src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?auto=format&fit=crop&w=900&q=80"
+            alt="Creative workspace with coastal inspiration"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="services" class="services">
+        <h2>What we ship</h2>
+        <div class="services__grid">
+          <article class="card">
+            <h3>Visual Identity</h3>
+            <p>
+              Logotypes, typography, palettes, and guidelines that keep the whole
+              crew rowing in sync.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Launch Sites</h3>
+            <p>
+              Responsive, fast landing pages that flex elegantly across devices
+              and focus on conversions.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Campaign Kits</h3>
+            <p>
+              Social templates, email layouts, and hero graphics for cohesive
+              multi-channel storytelling.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Product Support</h3>
+            <p>
+              Design subscriptions for product teams who need fast iterations and
+              a friendly partner.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="showcase">
+        <div class="showcase__text">
+          <p class="eyebrow">Recent collab</p>
+          <h2>Salt &amp; Cedar rebrand</h2>
+          <p>
+            We rebuilt Salt &amp; Cedar's digital presence from naming through
+            launch. Their bookings grew 47% in six weeks.
+          </p>
+          <a class="btn btn--ghost" href="#">See the full case study</a>
+        </div>
+        <div class="showcase__image-grid">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80"
+            alt="Brand moodboard"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+            alt="Laptop with design software"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?auto=format&fit=crop&w=600&q=80"
+            alt="Beach sunrise inspiration"
+          />
+        </div>
+      </section>
+
+      <section class="quote">
+        <blockquote>
+          “Coastline Creative delivered more than a new brand. They gave us
+          language, imagery, and confidence to scale.”
+        </blockquote>
+        <p class="quote__author">— Casey Morales, Salt &amp; Cedar</p>
+      </section>
+
+      <section id="contact" class="cta">
+        <div class="cta__copy">
+          <h3>Ready to launch?</h3>
+          <p>Tell us about your product and we’ll send a tailored roadmap.</p>
+        </div>
+        <a href="mailto:hello@coastlinecreative.studio" class="btn btn--secondary"
+          >Write to the studio</a
+        >
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Coastline Creative. Built with ❤️ at the shore.</p>
+      <a href="https://unsplash.com" target="_blank" rel="noreferrer">
+        Imagery credits: Unsplash creators
+      </a>
+    </footer>
+
+    <script>
+      const yearSpan = document.getElementById("year");
+      yearSpan.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
